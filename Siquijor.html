@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siquijor</title>
+
+<link rel="stylesheet" href="./CSS/pagesLocal.css">
+</head>
+<body class="Siquijor">
+    <div class="Container">
+        <div class="content">
+            <h1>Siquijor</h1>
+            <P>Siquijor is an island province in the Philippines, located in the Central Visayas region.
+                It is known for its beautiful beaches, lush forests, and rich history.
+                The Siquijor people are a warm and hospitable
+                 group who are proud of their unique culture and traditions.</P>
+            <h2>History</h2>
+            <H3>Pre-colonial era</H3>
+            <P>
+                The Siquijor people are believed to have descended from the Austronesians who migrated to the Philippines from Southeast Asia around 2,000 years ago.
+                The Siquijor people developed a unique culture that was influenced by the various groups of people who visited the island, including the Malays, Chinese, and Arabs.
+                The Siquijor people were skilled farmers and fishermen, and they also developed a rich tradition of weaving and pottery
+            <h2>Culture</h2>
+            <p>Siquijor culture is a blend of indigenous, Spanish, and American influences. T
+                he people are deeply religious and have a strong belief in the power of nature. 
+                They are also known for their love of music and dance.</p>
+            <h3>Siquijor Dance</h3>
+                <img src="./Images/SiquijorCulture.jpg" alt="Siquijor Culture Dance">
+                <p>Siquijor is also famous for its folklore and legends.
+                    The island is said to be a place of enchantment,
+                    and there are many stories of fairies, witches, and other magical creatures.</p>
+            <h3>Siquijor Folklore</h3>
+                <img src="./Images/SiquijorFolklore.jpg" alt="Siquijor Culture Dance">
+            <h2>Etiquettes</h2>
+            <p>
+                When visiting Siquijor, it is important to be respectful of the local culture and traditions. Here are a few tips:
+            </p>
+                <ul>
+                    <li>Dress modestly. Cover your shoulders and knees, and avoid wearing revealing clothing.</li>
+                    <li>Be respectful of elders. Elders are held in high esteem in Siquijor culture, and it is important to treat them with respect.</li>
+                    <li>Avoid pointing or using harsh language. Siquijor people are generally polite and respectful, and it is important to reciprocate this attitude.</li>
+                    <li>Ask permission before taking photos. It is considered rude to take photos of people without their permission.</li>
+                    <li>Do not touch people or their belongings without permission. Siquijor people are generally private, and it is important to respect their privacy.</li>
+                    <li>Offer gifts. If you are invited to someone's home, it is polite to bring a gift of food or drink.</li>
+                    <li>Be patient. Siquijor people are generally laid-back and relaxed, so don't expect things to happen quickly.</li>
+                </ul>
+            <p>
+                By following these tips, you can help ensure that you have a positive and respectful experience when visiting Siquijor.
+            </p>
+            <h2>Additional Information</h2>
+                <ul>
+                    <li>The Siquijor people are a hospitable people, and they are always happy to welcome visitors to their island.</li>
+                    <li>There are a number of festivals and celebrations that take place in Siquijor throughout the year.</li>
+                    <li>The island is home to a number of stunning natural attractions, including Cambugahay Falls, Lugnason Falls, and the Siquijor Natural Bridge.</li>
+                    <li>Siquijor is a great place to go for swimming, snorkeling, and diving.</li>
+                </ul>
+             <P>I hope this information is helpful.</P>
+             <button id="toggleButton">Local Events</button>
+        </div>
+        <div class="content" id="calendarContainer">
+            <h1 id="headCalendar">Local Date Events</h1>
+            <div class="CalendarEvents">
+                <h6 class="EventName">Healing Festival</h6>
+                <h2 class="EventDate">Every April 30</h2>
+                <p>Healing Festival - Experience the mystical Healing Festival on April 30th, known for traditional healing rituals.</p>
+                <a class="SetDate" href="#">Set Plan</a>
+            </div>
+            <div class="CalendarEvents">
+                <h6 class="EventName">Festival of the Enchanted Balete Tree</h6>
+                <h2 class="EventDate">Every June 15</h2>
+                <p>Festival of the Enchanted Balete Tree - Join the celebration near the famous Balete Tree on June 15th.</p>
+                <a class="SetDate" href="#">Set Plan</a>
+            </div>
+            <div class="CalendarEvents">
+                <h6 class="EventName">Salagdoong Beach Summer Fiesta</h6>
+                <h2 class="EventDate">Every July 20-22</h2>
+                <p>Salagdoong Beach Summer Fiesta - Enjoy the sun, sand, and festivities from July 20th to 22nd at Salagdoong Beach.</p>
+                <a class="SetDate" href="#">Set Plan</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleButton = document.getElementById('toggleButton');
+            var calendarContainer = document.getElementById('calendarContainer');
+            toggleButton.addEventListener('click', function () {
+                if (calendarContainer.style.display === 'none' || calendarContainer.style.display === '') {
+                    calendarContainer.style.display = 'block';
+                } else {
+                    calendarContainer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    </div>
+</body>
+</html>

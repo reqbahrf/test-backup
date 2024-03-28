@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifugao Province</title>
+
+<link rel="stylesheet" href="./CSS/pagesLocal.css">
+
+</head>
+<body class="Ifugao">
+    <div class="Container"> 
+        <div class="content">
+            <h1>Ifugao Province</h1>
+            <P>Ifugao Province is a landlocked province in the Philippines located in the Cordillera Administrative Region. It is known for its rice terraces, which are carved into the mountains and are considered to be one of the Eighth Wonders of the World.
+            The Ifugao people are a group of indigenous people who have inhabited the region for centuries.
+            They are known for their rich culture and traditions.</P>
+            <h2>History</h2>
+            <H3>Pre-colonial era</H3>
+            <P>
+                The Ifugao people are believed to have descended from the Austronesians who migrated to the Philippines from Southeast Asia around 2,000 years ago. 
+                The Ifugao people developed a complex system of agriculture, including the construction of the rice terraces, which allowed them to grow rice on the steep slopes 
+                of the mountains. The Ifugao people also developed a rich culture and traditions, including their own language, religion, and art.
+            </P>
+            <H3>Spanish colonial era</H3>
+            <p>
+                The Spanish arrived in the Philippines in the 16th century and began to colonize the islands. The Ifugao people were initially resistant to Spanish rule, but they eventually submitted to Spanish authority. The Spanish attempted to convert
+                the Ifugao people to Christianity, but they were largely unsuccessful. The Spanish also imposed taxes on the Ifugao people, which led to a number of rebellions.
+            </p>
+            <h3>American colonial era</h3>
+            <P>
+                The Americans arrived in the Philippines in the late 19th century and defeated the Spanish in the Spanish-American War. The Americans continued to rule the Philippines until 1946. The Americans introduced a number of changes to Ifugao society, 
+                including the introduction of schools and hospitals. The Americans also built roads and bridges that made it easier for people to travel in and out of the province.
+            </P>
+            <h3>Post-colonial era</h3>
+            <p>
+                The Philippines gained independence from the United States in 1946. Since then, Ifugao Province has been a part of the Philippines. The province has continued to develop and grow, and it is now a popular tourist destination.
+            </p>
+            <h2>Culture</h2>
+            <p>Ifugao culture is based on a deep respect for nature and the spirits of their ancestors. The people believe that they are connected to everything in the natural world, and they 
+                have developed a complex system of rituals and ceremonies to maintain this connection. The Ifugao people are also skilled artisans, and they are known for their wood carvings, pottery, 
+                and weaving.</p>
+                <h3>Ifugao people</h3>
+                <img src="Images/ifugaoCulture.jpg" alt="culture of Ifugao">
+            <h2>Etiquettes</h2>
+            <p>
+                When visiting Ifugao Province, it is important to be respectful of the local culture and traditions. Here are a few tips:
+            </p>
+                <ul>
+                    <li>Dress modestly. Cover your shoulders and knees, and avoid wearing revealing clothing.</li>
+                    <li>Be respectful of elders. Elders are held in high esteem in Ifugao culture, and it is important to treat them with respect.</li>
+                    <li>Avoid pointing or using harsh language. Ifugao people are generally polite and respectful, and it is important to reciprocate this attitude.</li>
+                    <li>Ask permission before taking photos. It is considered rude to take photos of people without their permission.</li>
+                    <li>Do not touch people or their belongings without permission. Ifugao people are generally private, and it is important to respect their privacy.</li>
+                    <li>Offer gifts. If you are invited to someone's home, it is polite to bring a gift of food or drink.</li>
+                    <li>Be patient. Ifugao people are generally laid-back and relaxed, so don't expect things to happen quickly.</li>
+                </ul>
+                <p>
+                    By following these tips, you can help ensure that you have a positive and respectful experience when visiting Ifugao Province.
+                </p>
+            <h2>Additional Information</h2>
+                <ul>
+                    <li>The Ifugao people are a hospitable people, and they are always happy to welcome visitors to their province.</li>
+                    <li>There are a number of festivals and celebrations that take place in Ifugao Province throughout the year.</li>
+                    <li>The province is home to a number of stunning natural attractions, including Banaue Rice Terraces, Mount Pulag, and Kiangan Rice Terraces.</li>
+                    <li>Ifugao Province is a great place to go for hiking, trekking, and camping.</li>
+                </ul>
+            <p>I hope this information is helpful.</p>
+            <button id="toggleButton">Local Events</button>
+        </div>
+        <div class="content" id="calendarContainer">
+            <h1 id="headCalendar">Local Date Events</h1>
+            <div class="CalendarEvents">
+                <h6 class="EventName">Ifugao Harvest Festival</h6>
+                <h2 class="EventDate">Every May 1-3</h2>
+                <p>Ifugao Harvest Festival - Celebrate the bountiful harvest with traditional dances and rituals from May 1st to 3rd.</p>
+                <a class="SetDate" href="#">Set Plan</a>
+            </div>
+            <div class="CalendarEvents">
+                <h6 class="EventName">Punnuk</h6>
+                <h2 class="EventDate">Every July 15</h2>
+                <p>Punnuk - Join the Ifugao people in celebrating Punnuk, a cultural event held annually on July 15th.</p>
+                <a class="SetDate" href="#">Set Plan</a>
+            </div>
+            <div class="CalendarEvents">
+                <h6 class="EventName">Gotad ad Ifugao</h6>
+                <h2 class="EventDate">Every November 21-23</h2>
+                <p>Gotad ad Ifugao - Experience the grand celebration of Ifugao culture and heritage from November 21st to 23rd.</p>
+                <a class="SetDate" href="#">Set Plan</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleButton = document.getElementById('toggleButton');
+            var calendarContainer = document.getElementById('calendarContainer');
+            toggleButton.addEventListener('click', function () {
+                if (calendarContainer.style.display === 'none' || calendarContainer.style.display === '') {
+                    calendarContainer.style.display = 'block';
+                } else {
+                    calendarContainer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    </div>
+
+</body>
+</html>

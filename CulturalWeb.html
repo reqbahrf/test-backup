@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourtesiSync</title>
+
+    <link rel="stylesheet" href="./CSS/pageStyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./Images/logo.png" id="Logo" alt="Logo">
+            <a href="">Home</a>
+            <a href="#about">What is CourtesiSync?</a>
+            <a href="">Forum</a>
+            <a href="">Blog</a>
+            <a href="#"id="Login">login</a>
+            <a href="" id="SignUP">Sign Up</a>
+        </nav>
+    </header>
+    <div class="overlay" id="loginOverlay">
+      <div class="login-container">
+        <span class="close-btn" onclick="closeLogin()">X</span>
+        <h2>Login</h2>
+        <form action="#" method="post" id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <button type="submit">Login</button>
+        </form>
+        <p>---------------OR-----------------</p>
+        <button class="google-login-button">
+          <i class="fab fa-google"></i>
+          <span class = "google">Login with Google</span>
+        </button>
+        <button class="facebook-login-button">
+          <i class="fab fa-facebook"></i>
+          <span class="Facebook">Login with Facebook</span>
+        </button>
+      </div>
+    </div>
+    <div class="overlay" id="signupOverlay">
+      <div class="signup-container">
+        <span class="close-btn" onclick="closeSignup()">X</span>
+        <h2>Sign Up</h2>
+        <form action="#" method="post" id="signupForm">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="newUsername">Username:</label>
+          <input type="text" id="newUsername" name="newUsername" required>
+          <br>
+          <label for="newPassword">Password:</label>
+          <input type="password" id="newPassword" name="newPassword" required>
+          <br>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <br>
+          <button type="submit">Sign Up</button>
+          <p>---------------OR-----------------</p>
+          <button class="google-login-button">
+            <i class="fab fa-google"></i>
+            <span class="google">Sign Up with Google</span>
+        </button>
+        <button class="facebook-login-button">
+            <i class="fab fa-facebook"></i>
+            <span class="Facebook">Sign Up with Facebook</span>
+        </button>
+        </form>
+      </div>
+    </div>
+    <script>
+      document.getElementById('Login').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('loginOverlay').style.display = 'flex';
+      });
+      function closeLogin() {
+        document.getElementById('loginOverlay').style.display = 'none';
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('loginOverlay').style.display = 'none';
+      });
+    </script>
+    <script>
+      document.getElementById('SignUP').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('signupOverlay').style.display = 'flex';
+      });
+      function closeSignup() {
+        document.getElementById('signupOverlay').style.display = 'none';
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('signupOverlay').style.display = 'none';
+      });
+    </script>
+    <div id="searchList">
+        <div>
+          <img src="./Images/Primary logo.png" id="Primarylogo" alt="">
+        </div>
+        <div id="searchbar">
+            <label for="locallist" class="choose">Choose a Place: </label>
+            <input type="text" name="locallist" id="locallist" list="citylist">
+            <datalist id="citylist">
+              <option value="Ifugao Province"></option>
+              <option value="Batanes"></option>
+              <option value="Siquijor"></option>
+            </datalist>
+        </div>
+    </div>
+    <script>
+        document.getElementById('locallist').addEventListener('input', function () {
+            var selectedValue = this.value.toLowerCase();
+            switch (selectedValue) {
+                case 'ifugao province':
+                    window.open('IfugaoProvince.html', '_blank');
+                    break;
+                case 'batanes':
+                    window.open('Batanes.html', '_blank');
+                    break;
+                case 'siquijor':
+                    window.open('Siquijor.html', '_blank');
+                    break;
+                default:
+                    break;
+            }
+        });
+    </script>
+  <main>
+    <h1 id="about">CourtesiSync</h1>
+    <p>Embark on a Cultural Journey: Discover Diverse Customs and Traditions</p>
+    <section>
+      <h2>Embrace the Tapestry of Human Culture</h2>
+      <p>Welcome to CourtesiSync, your gateway to a world of diverse customs, traditions, and vibrant cultures. Embark on a captivating journey of discovery, immersing yourself in the unique practices and beliefs that shape our world.</p>
+    </section>
+    <section>
+      <h2>Uncover Hidden Gems of Cultural Heritage</h2>
+      <p>Delve into the rich tapestry of human cultures, exploring the diverse perspectives and expressions that make our world so extraordinary. Our interactive platform showcases the captivating customs and traditions of various regions, providing insights into their historical significance and contemporary relevance.</p>
+      <div class="column-container">
+        <div class="column">
+          <h3>Discovering Diversity Views</h3>
+          <img src="./Images/IconCulturalDiversity.png" alt="Cultural Diversity">
+          <p>Navigate the intricate world of cultural etiquette with confidence. Our comprehensive guide offers valuable insights into acceptable and unacceptable behaviors in different cultures, ensuring you navigate social interactions with grace and respect.</p>
+        </div>
+        <div class="column">
+          <h3>Awareness of the Diversities History</h3>
+          <img src="./Images/CulturalHistory.png" alt="Cultural History">
+          <p>Unearth the fascinating stories behind diverse cultural practices. Our platform delves into the historical and social contexts that have shaped these customs, providing a deeper understanding of their significance and the values they embody.</p>
+        </div>
+        <div class="column">
+          <h3>Promoting Diversities</h3>
+          <img src="./Images/PromoteDiversity.png" alt="Celebrating Cultural Diversity">
+          <p>Embrace the beauty of cultural diversity and appreciate the unique contributions each culture brings to our world. Our platform fosters inclusivity and understanding, promoting cross-cultural respect and appreciation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Embark on Your Cultural Adventure Today</h2>
+      <p>Join us as we explore the rich tapestry of human culture. With CourtesiSync, you'll gain a deeper understanding of diverse perspectives, appreciate the essence of different cultures, and navigate the world with confidence.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+          <h4>Contact Us</h4>
+          <p>Email: info@courtesisync.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+      </div>
+
+      <div class="social-media">
+        <h4>Follow Us</h4>
+        <a href="" target="_blank">
+            <img src="./Images/facebook.png" alt="Facebook Icon"> Facebook
+        </a>
+        <a href="" target="_blank">
+            <img src="./Images/x.png" alt="Twitter Icon"> X
+        </a>
+        <a href="" target="_blank">
+          <img src="./Images/instagram.png" alt="instagram"> Instagram
+      </a>
+    </div>
+  </div>
+
+  <div class="copyright">
+      <p>&copy; CourtesiSync 2023</p>
+  </div>
+  </footer>
+</body>
+</html>
